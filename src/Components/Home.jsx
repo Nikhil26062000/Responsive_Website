@@ -4,6 +4,7 @@ import Line from './Line';
 import Navbar from './Navbar';
 import Section1 from './Section1';
 import Category from './Category';
+import Test from './Test';
 
 const Home = () => {
 
@@ -25,6 +26,7 @@ const Home = () => {
       <Section1 /> 
 
       <Category />
+      <Test />
     </>
   )
 }
