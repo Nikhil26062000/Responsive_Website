@@ -27,7 +27,7 @@
   .title h1 {
     padding: 1%;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 25px !important;
     font-family: 'Poppins', sans-serif;
     color: green;
   }
@@ -64,7 +64,7 @@
 /* NAVBAR STARTS */
 
   .navbar{
-    display: grid;
+    display: grid !important;
     grid-template-columns: 350px 1fr 350px;
     grid-template-rows: 40px;
     
@@ -272,9 +272,126 @@
     display: none;
   }
 
+  .Philosophy h2{
+    grid-row: 1/2;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: green;
+}
+    
+  .Philosophy{
+        display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 125px 50px 113px;
+    background: ghostwhite;
+    box-shadow: 0 6px 12px -4px rgba(11,18,25,.5);
+    /* box-shadow: 0px 0px 17px 12px rgba(11,18,8,.5); */
+    border-radius: 10px 50px;
+    margin: 0px 20px;
+    font-family: poppins;
+  }
+
+  .Philosophy:hover{
+    box-shadow: 0px 0px 17px 12px rgba(11,18,8,.5); 
+  }
+
+  .Philosophy h6{
+        grid-row: 2/3;
+    display: grid;
+    /* justify-items: center; */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Philosophy p{
+        display: grid;
+    grid-row: 3/4;
+    align-items: center;
+    text-align: -webkit-center;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-family: fantasy;
+    color: green;
+  }
+
+  .card{
+    width: 250px;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 241px 50px 30px 30px;
+    /* width: 300px; */
+    /* background: cadetblue; */
+    border-radius: 20px;
+    box-shadow: 0 6px 12px -4px rgba(11,18,25,.5);
+    margin: 2%;
+  }
+
+  .card img{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    grid-row: 1/2;
+  }
+
+  .card h3{
+    grid-row: 2/3;
+    padding: 0px 10px;
+    display: grid;
+    align-items: center;
 
 
+  }
 
+  .card h4{
+    padding: 0px 10px;
+    display: grid;
+    align-items: center;
+  }
+
+  .card h6{
+    padding: 0px 10px;
+    color: green;
+  }
+
+  .card h5{
+    padding: 0px 10px;
+    color: green;
+  }
+
+  .CardRow{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-rows: 400px;
+    /* background-color: aqua; */
+    margin-left: 5%;
+  }
+
+  .footer{
+    width: 100%;
+    background: aliceblue;
+    height: 73vh;
+  }
+
+  .footer1{
+    display: grid;
+    grid-template-columns: 100px 0.3fr 1fr 100px;
+    grid-template-rows: 150px;
+  }
+
+  .footer1 .left{
+    grid-column: 2/3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: green;
+  }
+
+  .footer1 .right{
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
 
 
@@ -340,7 +457,13 @@
       display: none;
     }
 
+    .Philosophy{    grid-template-rows: 81px 36px 177px;
+    }
 
+    .Philosophy p{
+      text-align: left;
+    padding: 10px;
+    }
 
    
   }
@@ -359,7 +482,7 @@
     align-items: center;
   }
   .navbar{
-    display: none;
+    display: none !important;
   }
 
   
@@ -498,6 +621,15 @@
   .smMob{
     display: none;
   }
+
+  .Philosophy{
+    grid-template-rows: 50px 50px 149px;
+  }
+
+  .Philosophy p{
+    text-align: left;
+    padding: 0px 10px;
+  }
 }
 
 
@@ -527,7 +659,7 @@
   }
 
   span{
-    font-size:20px;
+    font-size:30px;
     padding: 2px;
     
   }
@@ -542,18 +674,18 @@
   }
 
   .navbar{
-    display: none;
+    display: none !important;
   }
 
   .Lines{
-    display: grid;
-    grid-template-columns:  1fr;
-    grid-template-rows: 20px;
-    align-items: center;
+    display: grid !important;
+    grid-template-columns:  1fr !important;
+    grid-template-rows: 20px !important;
+    align-items: center !;
   }
 
   .mainLine {
-    width: 100%;
+    width: 100% !important;
     height: 1px;
     grid-column: 1/2;
     background-color:black;
@@ -667,6 +799,19 @@
     justify-items: center;
   }
  
+  .Philosophy{
+    grid-template-rows: 50px 50px 257px;
+    box-shadow: 0 6px 12px -4px rgba(11,18,25,.5);
+  }
+
+  .Philosophy p{
+    text-align: left;
+    padding: 0px 10px;
+  }
+
+  .CardRow{
+    justify-items: center;
+  }
   
 
 
